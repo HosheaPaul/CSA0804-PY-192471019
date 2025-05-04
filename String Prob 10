@@ -1,0 +1,8 @@
+a = input("Enter a string: ")
+b = input("Give a string to change: ")
+seen = []
+if b in a:
+    a = a.replace(b, "paul", 1)  # Replace only the first occurrence
+    print("Modified string:", a)
+else:
+    print("No repeating string found.")
