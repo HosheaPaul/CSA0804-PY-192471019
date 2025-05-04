@@ -1,0 +1,10 @@
+a=list(input("Enter a string="))
+check=False
+for i in a:
+    if i in a:
+        print("first repeating character",i)
+        check=True
+        break
+    a.append()
+if not check:
+    print("No repeating character")
