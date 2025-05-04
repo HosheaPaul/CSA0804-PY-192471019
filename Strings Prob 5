@@ -1,0 +1,3 @@
+a=input("Enter an email=")
+b=input("enter substring=")
+print("The index of the substring is" , a.index(b))
