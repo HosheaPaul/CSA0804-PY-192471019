@@ -1,0 +1,5 @@
+a=input("Enter an email=")
+if "@gmail.com" in a :
+    print(a,"is a valid email")
+else:
+    print(a,"is not a valid email")
