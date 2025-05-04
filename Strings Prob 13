@@ -1,0 +1,10 @@
+a=input("Enter a string=")
+digit=False
+for i in a :
+    i.isdigit()
+    digit=True
+    break
+if digit:
+    print(a, "has digits" )
+else:
+    print(a,"does not have digits")
