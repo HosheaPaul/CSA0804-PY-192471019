@@ -1,0 +1,24 @@
+text = input("Enter a string: ")
+words = text.split()
+unique_words = []
+for word in words:
+    if word not in unique_words:
+        unique_words.append(word)
+frequencies = []
+for word in unique_words:
+    frequencies.append(words.count(word))
+first_max = second_max = -1
+for freq in frequencies:
+    if freq > first_max:
+        second_max = first_max
+        first_max = freq
+    elif freq > second_max and freq != first_max:
+        second_max = freq
+found = False
+for i in range(len(unique_words)):
+    if frequencies[i] == second_max:
+        print(f"Second most frequent word: '{unique_words[i]}' (occurs {second_max} times)")
+        found = True
+        break
+if not found:
+    print("No second most frequent word found.")
