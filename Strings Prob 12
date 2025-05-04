@@ -1,0 +1,13 @@
+text = input("Enter a string: ")
+words = text.split()
+unique_words = []
+for word in words:
+    if word not in unique_words:
+        unique_words.append(word)
+max_count = 0
+most_frequent = ""
+    count = words.count(word)
+    if count > max_count:
+        max_count = count
+        most_frequent = word
+print(f"Most frequent word: '{most_frequent}' (occurs {max_count} times)")
