@@ -1,0 +1,3 @@
+a=list(input("Enter a string="))
+b=list(input("Enter a string="))
+print(set(a) &set(b))
