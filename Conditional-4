@@ -1,0 +1,7 @@
+a=int(input("Enter  a value of quadratic equation"))
+b=int(input("Enter  b value of quadratic equation"))
+c=int(input("Enter  c value of quadratic equation"))
+root1=-b+((b**2-4*a*c)**0.5/2*a)
+root2=-b-((b**2-4*a*c)**0.5/2*a)
+print("Root 1 =",root1)
+print("Root 2 =",root2)
