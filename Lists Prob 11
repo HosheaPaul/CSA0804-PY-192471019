@@ -1,5 +1,0 @@
-import random
-user_input = input("Enter a list of numbers or words (space-separated): ")
-items = user_input.split()
-random.shuffle(items)
-print("Shuffled list:", items)
